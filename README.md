@@ -38,10 +38,10 @@ Usage
  * broadcast this stream for a specific entity via the NVC API
 
  ```
-   NVC.updateBones(
-    string guid,
-    List<Vector> translations,
-    List<Quat> rotations,
-    int timestamp
-   )
+ NVC.updateBones(
+     string guid,
+     List<Vector> translations,
+     List<Quat> rotations,
+     int timestamp
+ )
  ```
