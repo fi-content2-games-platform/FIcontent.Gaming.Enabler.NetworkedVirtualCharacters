@@ -1,4 +1,4 @@
-FIcontent.Gaming.Enabler.NetworkedVirtualCharacters
+Networked Virtual Characters (NVC) SE
 ===================================================
 
 This repository contains the Networked Virtual Characters (NVC) SE of the FIcontent Pervasive Games Platform.
@@ -20,8 +20,12 @@ Installation
  * You may need to activate them,  i.e.
    * by including the .csproj file into the solution file
    * amend the client.html with additional script tags to load the plugin
-     ''<!-- Networked Virtual Character SE -->''
-     ''<script type="text/javascript" src="scripts/plugins/networkedvirtualcharacter/nvc.js"></script>''
+
+   ```
+  <!-- Networked Virtual Character SE -->
+  <script type="text/javascript" src="scripts/plugins/networkedvirtualcharacter/nvc.js"></script>
+   ```
+   
    * trigger Unity to determine the additional files
 
 Usage
@@ -32,4 +36,12 @@ Usage
    * by calculating physically-correct animation (i.e. rag-doll)
    * by using a motion synthesis library
  * broadcast this stream for a specific entity via the NVC API
-   ''NVC.updateBones(string guid, List<Vector> translations, List<Quat> rotations, int timestamp)''
+
+ ```
+   NVC.updateBones(
+    string guid,
+    List<Vector> translations,
+    List<Quat> rotations,
+    int timestamp
+   )
+ ```
